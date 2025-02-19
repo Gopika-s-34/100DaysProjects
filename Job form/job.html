@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="job.css">
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="job">
+        <h2>Job Application</h2>
+        <!-- form details container -->
+        <div class="form-details">
+            <!-- name field -->
+            <div class="name">
+                <div class="name-labels">
+                    <label for="first-name">First Name:</label>
+                    <label for="last-name">Last Name:</label>
+                </div>
+                <div class="name-inputs">
+                    <input id="first-name" type="text" name="first-name" placeholder="Enter first name" required>
+                    <input id="last-name" type="text" name="last-name" placeholder="Enter last name" required>
+                </div>
+            </div>
+            <!-- email & job role field -->
+            <div class="em-jo">
+                <div class="em-jo-labels">
+                    <label for="email">Email:</label>
+                    <label for="job-des"> Job Role:</label>
+                </div>
+                <div class="em-jo-inputs">
+                    <input id="email" type="email" name="email" placeholder="Enter email" required>
+                    <input id="job-des" type="text" name="job-des" required>
+                </div>
+            </div>
+            <!-- address field -->
+            <div class="addr">
+                <label for="address">Enter Address:</label>
+                <textarea name="address" id="address" required></textarea>
+            </div>
+            <!-- city & pin-code field -->
+            <div class="placecode">
+                <div class="place-labels">
+                    <label for="city">City: </label>
+                    <label for="pincode">Pincode: </label>
+                </div>
+                <div class="place-input">
+                    <input id="city" type="text" name="city" placeholder="Enter your city" required>
+                    <input id="pincode" type="number" name="pincode" placeholder="Enter pincode" required>
+                </div>
+            </div>
+            <!-- doa & upload cv field -->
+            <div class="doa">
+                <div class="doa-labels">
+                    <label for="doa">Start Date:</label>
+                    <label for="upload-cv" class="custom-file-label">Choose File</label>
+                </div>
+                <div class="doa-input">
+                    <input id="doa" type="date" name="doa">
+                    <input id="upload-cv" type="file" name="upload-cv" hidden>
+                </div>
+            </div>
+            <!-- submit btn -->
+            <input id="btn-apply" type="submit" value="Apply Now">
+        </div>
+    </div>
+</body>
+</html>

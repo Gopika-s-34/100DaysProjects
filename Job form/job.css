@@ -1,0 +1,226 @@
+:root{
+    --primary: rgb(146, 136, 136);
+    --secondary: #f9fbfd;
+    --text-color: rgb(88, 85, 85);
+    --btn-primary: rgb(255, 8, 8);
+    --btn-hover: rgb(247, 45, 45);
+    --input-color: #ccc; 
+    --input-focus: #007BFF;
+    --btn-secondary: white;
+    --input-focus-bg: #f0f8ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+/* Main container */
+.job{
+    background-color: var(--secondary);
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+/* heading for job application */
+.job h2{
+    font-weight: 2rem;
+    font-size: 3rem;
+    margin: 10px;
+    text-align: center;
+}
+/* container for input and labels */
+.form-details{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    row-gap: 10px;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-weight: 550;
+    margin-top: 20px;
+}
+/* first and last name */
+.name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.name-labels {
+    display: flex; 
+    justify-content: space-evenly; 
+}
+.name label {
+    margin-bottom: 10px; 
+    font-size: 1.2rem; 
+    font-weight: 550;
+    text-align: left;
+    width: 48%; 
+}
+.name-inputs {
+    display: flex; 
+    justify-content: space-evenly; 
+}
+.name input {
+    padding: 10px; 
+    font-size: 1rem; 
+    border: 1px solid var(--input-color); 
+    border-radius: 5px;
+    width: 48%;
+    text-align: left;
+}
+/* email & job role */
+.em-jo {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 10px; 
+}
+.em-jo-labels {
+    display: flex; 
+    justify-content: space-evenly; 
+}
+.em-jo label {
+    margin-bottom: 10px;
+    font-size: 1.2rem; 
+    font-weight: 550;
+    text-align: left;
+    width: 48%; 
+}
+.em-jo-inputs {
+    display: flex; 
+    justify-content: space-evenly; 
+}
+.em-jo input {
+    padding: 10px;
+    font-size: 1rem; 
+    border: 1px solid var(--input-color); 
+    border-radius: 5px;
+    width: 48%;
+    text-align: left;
+}
+/* address */
+.addr{
+    display: flex;
+    flex-direction: column;
+}
+.addr label{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 550;
+    text-align: left;
+    width: 48%;
+}
+.addr textarea{
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--input-color); 
+    text-align: left;
+    width: 100%;
+    border-radius: 5px;
+}
+/* city & pincode */
+.placecode{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.place-labels{
+    display: flex;
+    justify-content: space-between;
+}
+.place-labels label{
+    font-size: 1.2rem;
+    margin-bottom: 10px; 
+    font-weight: 550;
+    text-align: left;
+    width: 48%; 
+}
+.place-input{
+    display: flex;
+    justify-content: space-evenly;
+}
+.place-input input{
+    padding: 10px; 
+    font-size: 1rem; 
+    border: 1px solid var(--input-color);
+    border-radius: 5px; 
+    width: 48%;
+    text-align: left;
+}
+/* doa & upload cv */
+.doa{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.doa-labels{
+    display: flex;
+    justify-content: space-between;
+}
+.doa-labels label{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 550;
+    text-align: left;
+    width: 48%; 
+}
+.doa-input{
+    display: flex;
+    justify-content: flex-start;
+}
+.doa-input input{
+    padding: 10px; 
+    font-size: 1rem; 
+    border: 1px solid var(--input-color); 
+    border-radius: 5px; 
+    width: 48%;
+    text-align: left;
+}
+/* focus for input */
+input:focus, textarea:focus {
+    outline: 2px solid var(--input-focus);
+    background-color: var(--input-focus-bg);
+}
+.custom-file-label {
+    padding: 10px;
+    border: 1px solid var(--input-color);
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+}
+/* apply button */
+#btn-apply{
+    padding:10px;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 30%;
+    margin-left: auto;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: var(--btn-primary);
+    color: var(--btn-secondary);
+    border: none;
+}
+#btn-apply:hover{
+    background-color: var(--btn-hover);
+    transform: scale(1.05);
+    transition: transform 0.2s
+}
+

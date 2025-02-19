@@ -1,0 +1,245 @@
+/* 
+--------- PRIMARY ---------
+li: #80daec
+medium: #00b4d8
+dar: #0077b6
+
+<!-- SECONDARY -->
+l: #fee440
+m: #ffbd00
+d: #ffbd00
+
+<!-- TER -->
+l: #d7c3e2
+m: #be95c4
+d: #b9a2c5
+
+<!-- Grey -->
+l: #
+m: #
+d: #
+*/
+/* ------------GLOBAL STYLES ------------ */
+:root{
+    --primary:#00b4d8;
+    --primary-lat: #0077b6;
+    --secondary: #ab86b0;
+    --secondary-lat: #72478a;
+    --text-cl: white;
+    --highlight-sec: rgb(190, 74, 190);
+    --highlight-tet: orange;
+    --grey: #6d7379;
+    --nav-height: 100px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Poppins', sanis-serif;
+    color: var(--grey);
+}
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+
+h1, h2, h3{
+    font-weight: 700;
+    letter-spacing: -2px;
+    color: #2c3034;
+
+}
+h1{
+    line-height: 1.2;
+    font-size: 6.2rem;
+}
+h2{
+    line-height: 1.5;
+    font-size: 4.8rem;
+}
+h3{
+    line-height: 1.5;
+    font-size: 4rem;
+}
+span{
+    display: inline-block;
+}
+p{
+    line-height: 1.5;
+    font-size: 2rem;
+}
+p.add{
+    font-size: 1.2rem;
+}
+/* ------------COMPONENTS ------------ */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+.btn{
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    border-radius: 15px;
+}
+
+.btn-primary:link , .btn-primary:visited {
+    background-color: var(--primary);
+    color: var(--text-cl);
+    border: 2px solid var(--primary);
+} 
+
+.btn-primary:hover , .btn-primary:active {
+    background-color: var(--primary-lat);
+    color: var(--text-cl);
+    border: 2px solid var(--primary-lat);
+}
+
+.btn-primary-outline:link, .btn-primary-outline:visited {
+    color:  var(--primary);
+    background-color:  white;
+    border: 2px solid var(--primary);
+}
+.btn-primary-outline:hover, .btn-primary-outline:active {
+    color: var(--primary-lat);
+    background-color: var(--text-cl);
+    border: 2px solid var(--primary-lat);
+}
+
+.btn-secondary:link , .btn-secondary:visited {
+    color: var(--text-cl);
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+}
+
+.btn-secondary:hover , .btn-secondary:active {
+    color: var(--text-cl);
+    background-color: var(--secondary-lat);
+    border: 2px solid var(--secondary-lat);
+}
+
+.highlight{
+    color: var(--text-cl);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.highlight-primary{
+    background-color: var(--primary);
+}
+.highlight-tertiary{
+    background-color: var(--highlight-tet)
+}
+.highlight-secondary{
+    background-color: var(--highlight-sec)
+}
+
+/* ------------HEADER SECTION ------------ */
+.header{
+    height: 100vh;
+    min-height: 800px;
+}
+
+/* ------------FEATURE SECTION ------------ */
+#features{
+    text-align: center;
+    margin-bottom: 9rem;
+}
+.feature-section { 
+    text-align: center;
+    margin-bottom: 30rem;
+}
+.feature-img{
+    max-width: 400px;
+    width: 100%;
+}
+
+/*  
+#span-ele{
+    color: white;\
+    background-color: orange;
+}*/
+
+
+/* ------------NAVIGATION SECTION ------------ */
+.navbar{
+    height: var(--nav-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+}
+
+/* ------------HERO SECTION ------------ */
+.hero-section{
+    text-align: center;
+    margin-bottom: 30rem;
+}
+.hero-section h1{
+    margin-bottom: 1rem;
+}
+
+.btn-links{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+.hero-section p{    
+    margin-bottom: 5rem;
+}
+
+/*  
+#hero-span{
+    color: white;
+    background-color: rgb(190, 74, 190);
+}*/
+
+/* ------------CTA SECTION ------------ */
+.cta-section{
+    margin-bottom: 30rem;
+}
+.ctacard{
+    text-align: center;
+    background-color: #0a8fd6;
+    max-width: 1000px;
+    padding: 10rem 20rem;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+.cta-section h2{
+    margin-bottom: 3rem;
+}
+/* ------------FOOTER ------------ */
+.footer-cl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.social-icons{
+    width: 20px;
+}
+.social-links{
+    display: flex;
+    gap: 1.5rem;
+}
+.footer-links{
+    display: flex;
+    gap: 1rem;
+}

@@ -1,0 +1,111 @@
+:root{
+    --primary-a: orange;
+    --primary-lat: rgb(253, 181, 72);
+    --text-cl: white;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e4a5a5;
+    background-size: cover;
+    padding: 2rem;
+    display: flex;                /* Enable flexbox */
+    justify-content: center;      /* Center horizontally */
+    align-items: center;          /* Center vertically */
+    height: 100vh;                /* Full viewport height */
+}
+
+h4, h5, p {
+    text-align: center;
+    color: #5a3237;
+}
+h4{
+    font-size: 2.2rem;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+h5{
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    text-align: left;
+}
+p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;  
+    text-align: left; 
+    margin-bottom: 1rem;
+}
+.container{
+    height: 430px;
+    width: 320px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.img1{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+.profile{
+    width: 50px;                 /* Set the size of the profile picture */
+    height: 50px;                /* Set the size of the profile picture */
+    border-radius: 50%;           /* Make it circular */
+    object-fit: cover;  
+    float: left;
+    margin-right: 0 auto;
+    align-items: first baseline;
+    margin-bottom: 30px;
+    margin-left: 10px;
+
+}
+.btn{
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 15px;
+    float: left;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    color: var(--primary-a);
+    border: 2px solid var(--primary-a);
+    margin-left: 10px;
+    margin-right: 190px;
+    margin-bottom: 5px;
+    
+}
+
+.btn-primary:hover , .btn-primary:active {
+    background-color: var(--primary-lat);
+    color: var(--text-cl);
+    border: 2px solid var(--primary-lat);
+}
+
+h5, p {
+    text-align: left; /* Align text to the left for clarity */
+    margin-left: 10px;
+}
+
+/* .btn-primary:link, .btn-primary:visited {
+    color: var(--primary-a);
+    background-color: var(--text-cl);
+    border: 2px solid var(--primary-a);
+} */
